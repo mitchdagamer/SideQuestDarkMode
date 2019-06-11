@@ -5,19 +5,9 @@ html,body{
     margin: 0;
     background: transparent;
     overflow: hidden;
-    color:white;
 }
 *{
     box-sizing: border-box;
-}
-.modal-close .btn-flat{
-  color:white;
-}
-.modal-content,.modal-footer,.pcr-app,.pcr-type,.pcr-interaction,.pcr-result,.well.well-lg{
-  background-color: #23272A !important;
-}
-.menu-item-inner:hover:after, .menu-item-inner.active:after{
-  border-color: #2C2F33;
 }
 .bsaber-webview{
     height:100%;
@@ -46,15 +36,6 @@ html,body{
     width:calc(100% - 200px);
     display: inline-block;
 }
-.collection-item:hover{
-  cursor:move;
-}
-.content-padding,.body-content,.collection-item{
-  background-color:#2C2F33 !important;
-}
-.beat-saber-version,input{
-  color:white !important;
-}
 #browser-bar{
     position: absolute;
     top: 65px;
@@ -76,17 +57,10 @@ html,body{
     color: white;
     outline: none;
 }
-.card.sticky-action.fixed-height,.card-reveal{
-  background-color:#23272A !important;
-  color:white;
-}
-.grey-text.text-darken-4{
-  color:white !important;
-}
 .body-content{
     height:calc(100% - 135px);
     width: 100%;
-    background:#2C2F33;
+    background:#f0f0f0;
     position:relative;
     overflow: auto;
 }
@@ -144,15 +118,12 @@ html,body{
 .pack-container{
     height: calc(100% - 250px);
     overflow: auto;
+    background-image: url(papyrus.png);
+    border-right: 1px solid #cfcfcf;
 }
 .pack-song-container-outer{
     border-bottom: 1px solid #e0e0e0;
     border-top: 1px solid #e0e0e0;
-    background-color:#23272A !important;
-}
-.pack-song-container {
-  margin-bottom:0px;
-  padding:0px;
 }
 .collection {
     border: 0px solid #e0e0e0;
@@ -167,17 +138,18 @@ html,body{
     margin-right: 0.5em;
     font-size: 2rem;
 }
+.pack-song-container{
+    padding: 10px;
+}
 .add-to-drag{
     width: 100%;
     padding: 1em;
-    border: 2px dashed white;
+    border: 2px dashed #3f3f3f;
     text-align: center;
-    background-color:#23272A !important;
-    color:white;
 }
 .header{
     height: 135px;
-    background:#1b1c1d;
+    background:#f8f8f8;
     position:relative;
     -webkit-user-select: none;
     -webkit-app-region: drag;
@@ -187,7 +159,7 @@ html,body{
     font-size: 2.5rem;
     margin-top: 0.4em;
     margin-left: 1em;
-    color: white;
+    color: #6f6f6f;
     font-family: 'PT Sans', sans-serif;
 }
 .apk-install{
@@ -334,7 +306,7 @@ html,body{
 ::-webkit-scrollbar {
     height: 16px;
     width: 16px;
-    background:#1b1c1d;
+    background: #e0e0e0;
 }
 ::-webkit-scrollbar-corner {
     background: #cfcfcf;
@@ -368,7 +340,7 @@ html,body{
     cursor: pointer;
     -webkit-app-region: no-drag;
     z-index: 99;
-    color: white;
+    color: #4f4f4f;
 }
 .is-installed{
     display: none;
@@ -393,7 +365,6 @@ html,body{
 }
 .connection-status-connected{
     background-color:#4caf50;
-    color:white;
 }
 .connection-status-unauthorized{
     background-color:#ff9800;

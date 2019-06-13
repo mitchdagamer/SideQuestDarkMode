@@ -78,7 +78,7 @@ html,body{
 }
 .menu-items{
     margin-top: 92px;
-    height:calc(100% - 361px);
+    height:calc(100% - 407px);
     overflow: hidden;
     overflow-y: auto;
     border-bottom: 1px solid #afafaf;
@@ -205,8 +205,7 @@ html,body{
 .no-padding{
     padding: 0;
 }
-.menu-item,.menu-item-setup,.menu-item-repo,.menu-item-beat,.menu-item-video{
-
+.menu-item,.menu-item-setup,.menu-item-repo,.menu-item-beat,.menu-item-video,.menu-item-files{
     font-family: 'Roboto', sans-serif;
     color: white;
     position:relative;
@@ -220,7 +219,7 @@ html,body{
     height: 100%;
     top:0;
 }
-.menu-item-setup,.menu-item-repo,.menu-item-beat,.menu-item-video{
+.menu-item-setup,.menu-item-repo,.menu-item-beat,.menu-item-video,.menu-item-files{
     position:absolute;
     bottom: 0px;
     left:0;
@@ -235,6 +234,9 @@ html,body{
 }
 .menu-item-video{
     bottom: 46px;
+}
+.menu-item-files{
+    bottom: 135px;
 }
 .menu-item-inner:hover{
     cursor: pointer;

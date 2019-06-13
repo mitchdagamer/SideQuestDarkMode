@@ -52,6 +52,23 @@
       </div>
     </div>
   </template>
+  <template id="fileStuff">
+
+    <center><a class="waves-effect waves-light btn" onclick="resetPath()"><i class="material-icons">home</i></a><h5 id="fileProgress" style="display: inline;"></h5></center>
+    <nav>
+  <div class="nav-wrapper" id="fileTree" style="padding-left:10px;">
+    <div class="col s12">
+      <a href="#!" class="breadcrumb">Quest</a>
+    </div>
+  </div>
+  </nav>
+  <ul class="collection" id="songList">
+
+  </ul>
+  <a class="btn-floating btn-large waves-effect waves-light red" onclick="listFiles()"><i class="material-icons">refresh</i></a>
+  <center><h3>Settings</h3></center>
+  <a class="waves-effect waves-light btn" onclick="document.querySelector('#fileDir').click()">Set Custom Dir</a> <span id="CustomDir">None set!<span> <input hidden id="fileDir" type="file" onchange="setCustomDir(this)" webkitdirectory />
+  </template>
   <template id="replaceItem">
     <div class="row">
       <div class="col s5 add-replace-key"></div>
@@ -538,7 +555,6 @@
         <div class="menu-item-inner file-menu side-sub-menu tooltipped" data-position="right" data-tooltip="Manage Files">
             <div class="row no-margin">
                 <div class="col s6 no-padding"><i class="material-icons fixed-menu-icon">folder</i></div>
-                <div class="col s6 no-padding icon-text">Files</div>
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@ class Bsaber {
             localStorage.setItem(
                 'beat-saber-version',
                 JSON.stringify(['1.1.0'])
-            );
+            ); 
             this.supportedBeatSaberVersions = ['1.1.0']; //'1.0.2','1.0.1','1.0.0'
         }
         this.questSaberPatchVersion =

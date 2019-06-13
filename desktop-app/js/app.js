@@ -493,7 +493,7 @@ class App {
                                 )
                             ) {
                                 questSaberPatchContainer.innerHTML = `<br><h6>Install Failed</h6>
-                            It looks like you are experiencing an issues with your pack file configuration.
+                            It looks like you are experiencing an issues with your pack file configuration.  
                             We can attempt to fix this issue for you but it will involve resetting your current packs to default. Please try to sync again after the autofix.<br><br>
                             <a class="waves-effect waves-light btn auto-fix-translocation">Autofix</a>`;
                                 questSaberPatchContainer
@@ -533,7 +533,7 @@ class App {
                                 ~error.indexOf('Error: Command failed:')
                             ) {
                                 questSaberPatchContainer.innerHTML = `<br><h6>Install Failed</h6>
-                            It looks like you are experiencing an issues with your pack file configuration or patcher.
+                            It looks like you are experiencing an issues with your pack file configuration or patcher.  
                             We can attempt to fix this issue for you but it will involve resetting your current packs to default. Please try to sync again after the autofix.<br><br>
                             <a class="waves-effect waves-light btn auto-fix-same-key">Autofix</a>`;
                                 questSaberPatchContainer
@@ -562,7 +562,7 @@ class App {
                                 )
                             ) {
                                 questSaberPatchContainer.innerHTML = `<br><h6>Install Failed</h6>
-                            It looks like you are experiencing an unknown error.
+                            It looks like you are experiencing an unknown error.  
                             We can attempt to fix this issue for you and it wont reset any of your songs / settings. Please try to sync again after the autofix.<br><br>
                             <a class="waves-effect waves-light btn auto-fix-same-key">Autofix</a>`;
                                 questSaberPatchContainer
@@ -1159,7 +1159,7 @@ class App {
                 e.style.display = 'none';
                 //let hrefParts = e.href.split('/');
                 //let songIdParts = hrefParts[hrefParts.length-1].split('-');
-
+                
                 let isAlready = !!e.parentElement.querySelector('.action.post-icon.bsaber-tooltip.-sidequest');
                 if(isAlready) return;
                 let downloadButton = document.createElement('a');
@@ -1677,11 +1677,11 @@ class App {
             this.title.innerHTML = 'Beast Saber Custom Levels';
             this.beatView.style.left = '-100%';
             this.apkInstall.style.display = 'block';
-            this.apkInstall.innerHTML = `Special thanks to
-<span class="link" data-url="https://github.com/trishume/QuestSaberPatch">@trishume</span>,
+            this.apkInstall.innerHTML = `Special thanks to 
+<span class="link" data-url="https://github.com/trishume/QuestSaberPatch">@trishume</span>, 
 <span class="link" data-url="https://github.com/emulamer/QuestStopgap">@emulamer</span>,
 <span class="link" data-url="https://github.com/ATechAdventurer">@ATechAdventurer</span>
-and of course
+and of course 
 <span class="link" data-url="https://bsaber.com/members/elliotttate/">@elliotttate</span> for beat saber efforts.`;
             [].slice
                 .call(this.apkInstall.querySelectorAll('.link'))
@@ -1710,14 +1710,14 @@ and of course
                             <h4 class="no-margin-top">Level Packs</h4>
                             <div class="row pack-container">
                             </div>
-
+                        
                         </div>
                     </div>
                     <div class="col s8">
                         <div class="sort-songs">Sort: <span class="sort-link sort-link-name">Name</span> | <span class="sort-link sort-link-recent">Recent</span></div>
                         <h4 class="no-margin-top">My Levels</h4>
                         <ul class="collection song-container">
-
+                        
                         </ul>
                     </div>`;
 
